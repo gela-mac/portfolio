@@ -41,7 +41,8 @@
             <p class="hero-subtitle">Data Science | Web Development | UI/UX Design</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <a href="Macalinao_LaurenAngela_Resume.pdf" class="btn btn-outline" download>Download CV <i
+                        class="fas fa-download"></i></a>
             </div>
         </div>
         <div class="hero-shape"></div>
@@ -175,7 +176,8 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-img-placeholder" style="background: linear-gradient(45deg, #2d4659, #84a98c);">
+                    <div class="project-img-placeholder"
+                        style="background-image: url('img/project-1.png'); background-size: cover; background-position: center;">
                     </div>
                     <div class="project-content">
                         <h3>E-Commerce Platform (MBOS)</h3>
@@ -191,7 +193,8 @@
                 </div>
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-img-placeholder" style="background: linear-gradient(45deg, #1b262c, #52796f);">
+                    <div class="project-img-placeholder"
+                        style="background-image: url('img/project-2.png'); background-size: cover; background-position: center;">
                     </div>
                     <div class="project-content">
                         <h3>Data Research Analysis</h3>
@@ -207,7 +210,8 @@
                 </div>
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <div class="project-img-placeholder" style="background: linear-gradient(45deg, #2f3e46, #cad2c5);">
+                    <div class="project-img-placeholder"
+                        style="background-image: url('img/project-3.png'); background-size: cover; background-position: center;">
                     </div>
                     <div class="project-content">
                         <h3>Python Data Warehouse</h3>
@@ -244,12 +248,19 @@
             </div>
 
             <div class="gallery-grid">
-                <!-- Placeholders for User Images -->
-                <div class="gallery-item item-1"><span>Travel 1</span></div>
-                <div class="gallery-item item-2"><span>Travel 2</span></div>
-                <div class="gallery-item item-3"><span>Travel 3</span></div>
-                <div class="gallery-item item-4"><span>Travel 4</span></div>
-                <div class="gallery-item item-5"><span>Travel 5</span></div>
+                <!-- User Images -->
+                <div class="gallery-item item-1"
+                    style="background-image: url('img/travel-1.png'); background-size: cover; background-position: center;">
+                    <span>Paris</span>
+                </div>
+                <div class="gallery-item item-2"
+                    style="background-image: url('img/travel-2.png'); background-size: cover; background-position: center;">
+                    <span>Japan</span>
+                </div>
+                <div class="gallery-item item-3"
+                    style="background-image: url('img/travel-3.png'); background-size: cover; background-position: center;">
+                    <span>Palawan</span>
+                </div>
             </div>
         </div>
     </section>
@@ -278,15 +289,15 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" action="mailto:laurenmacalinao@gmail.com" method="post" enctype="text/plain">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -299,6 +310,9 @@
             <p>&copy; 2025 Lauren Angela Macalinao. Designed with <span class="text-sage">&hearts;</span></p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
 
     <script src="js/main.js"></script>
 </body>

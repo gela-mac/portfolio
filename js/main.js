@@ -65,4 +65,47 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(element);
     });
 
+    // Scroll to Top
+    const scrollTopBtn = document.querySelector('.scroll-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Active Navigation Highlight
+    const sections = document.querySelectorAll('section, header');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const headerOffset = 100;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - headerOffset)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navItems.forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href').includes(current)) {
+                a.classList.add('active');
+            }
+        });
+    });
+
 });
